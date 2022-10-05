@@ -1,8 +1,8 @@
-
-nav ul {
+nav>ul {
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
     margin: 20px;
     padding: 0 10px;
@@ -12,6 +12,23 @@ nav li a {
     text-decoration: none;
     font-size: 20px;
 }
-nav li:hover{
+
+nav li:hover {
     background-color: lightgrey;
+}
+
+.dropdown {
+    display: none;
+    position:absolute;
+    background-color:aquamarine;
+    padding: 0;
+}
+.dropdown li{
+    padding: 0 10px
+}
+.dropdown li:hover{
+    background-color: skyblue
+}
+nav ul li:hover ul {
+    display: block;
 }
